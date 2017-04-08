@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mWebView.setWebViewClient(new WebViewClient());
         mWebViewSettings = mWebView.getSettings();
         mWebViewSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("http://m.naver.com/");
+        mWebView.loadUrl("http://soylatte.kr:5000");
     }
 
     @Override
@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             //Toast.makeText(this, "버튼 클릭 이벤트", Toast.LENGTH_SHORT).show();
 
             new AlertDialog.Builder(this)
-                    .setTitle("프로그램 종료")
-                    .setMessage("프로그램을 종료하시겠습니까?")
+                    .setTitle("에너지가 낭비되고 있어요!")
+                    .setMessage("앱을 종료하시겠습니까?")
                     .setPositiveButton("예", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
